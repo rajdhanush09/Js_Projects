@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(115deg,rgb(143, 4, 143),#9910b5,#cb4adf,#b97fc0);
+    padding: 10px;
+    align-items: center;
+}
+ .todolist{
+    background-color: azure;
+    width:100%;
+    max-width: 520px;
+    margin:100px auto 20px;
+    padding: 40px 30px 50px;
+    border-radius: 10px;
+
+}
+.todolist h2 {
+    display: flex;
+    align-items: center;
+}
+h2 img{
+    width: 60px;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    background-color:beige;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+.search input{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: transparent;
+    flex: 1;
+    margin-left: 20px;
+    font-size: 16px;
+
+    
+
+}
+.search button{
+    padding: 10px 30px;
+    background-color: rgb(255, 60, 0);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+.unorderlist {
+    margin: 40px 20px;
+
+}
+.unorderlist li{
+    margin-top: 30px ;
+    margin-left: 60px;
+    list-style: none;
+    position:relative;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    border-radius: 30px;
+}
+.unorderlist li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    background-image: url("images/unchecked.png");
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: absolute;
+    background-size: cover;
+    left:-40px;
+    background-position: center;
+    top:-6px
+}
+span{
+    right: 0px;
+    position: absolute;
+    
+    padding: 4px 10px;
+    
+    border-radius: 50%;
+}
+span:hover{
+    background-color:rgba(191, 197, 197, 0.633);
+}
+.unorderlist li.checked{
+    text-decoration: line-through;
+    color:rgb(80, 77, 77) ;
+}
+ul li.checked::before{
+    background-image: url("images/checked.png");
+}

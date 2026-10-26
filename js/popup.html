@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Msg</title>
+</head>
+<link rel="stylesheet" href="popup.css">
+<body>
+    <div class="container">
+        <button class="btn" type="submit" onclick="show()">Submit</button>
+    </div>
+    <div class="popup">
+        <img src="images/404-tick.png">
+        <h2>Thank You..!</h2>
+        <p>
+            Your details has been successfully stored...please visit again!
+        </p>
+        <button onclick="closepopup()">OK</button>
+    </div>
+    <script>
+        var popupmsg=document.querySelector(".popup");
+        
+        function show(){
+            popupmsg.classList.add("open-popup");
+        }
+        function closepopup(){
+            popupmsg.classList.remove("open-popup");
+        }
+    </script>
+    
+</body>
+</html>
